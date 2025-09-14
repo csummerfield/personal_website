@@ -123,6 +123,21 @@ body {
     background: #f8f9fa;
     border-radius: 15px;
     border-left: 5px solid #667eea;
+    display: flex; /* Use flexbox for layout */
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Space between image and text */
+}
+
+.book-content {
+    flex: 1; /* Allow content to take remaining space */
+}
+
+.book-cover {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Prevent image from shrinking */
 }
 
 .book h3 {
@@ -229,6 +244,16 @@ a:hover {
     .section h2 {
         font-size: 2rem;
     }
+
+    .book {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center items */
+        text-align: center;
+    }
+
+    .book-cover {
+        margin-bottom: 20px; /* Add space below image when stacked */
+    }
 }
 
 @media (max-width: 480px) {
@@ -247,29 +272,6 @@ a:hover {
     
     .book, .research-section {
         padding: 1.5rem;
-    }
-}
-
-
-
-.book-cover {
-    max-width: 150px;
-    height: auto;
-    float: left;
-    margin-right: 20px;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.book {
-    overflow: hidden; /* Clear float */
-}
-
-@media (max-width: 768px) {
-    .book-cover {
-        float: none;
-        margin: 0 auto 20px auto;
-        display: block;
     }
 }
 
