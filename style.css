@@ -105,6 +105,12 @@ body {
     flex-shrink: 0;
 }
 
+figcaption {
+  display: block;         /* ensures it’s on its own line */
+  margin-top: 0.5em;      /* adds spacing */
+  font-style: italic;     /* optional styling */
+}
+
 .about-text {
     flex: 1;
 }
