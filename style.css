@@ -6,7 +6,8 @@
 }
 
 body {
-    font-family: "DejaVu Sans", Arial, sans-serif;    line-height: 1.6;
+    font-family: "DejaVu Sans", Arial, sans-serif;
+    line-height: 1.6;
     color: #333;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
@@ -98,17 +99,11 @@ body {
 
 .profile-image {
     width: 300px;
-    height: 400px;
+    height: 300px;
     border-radius: 15px;
     object-fit: cover;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     flex-shrink: 0;
-}
-
-figcaption {
-  display: block;         /* ensures it’s on its own line */
-  margin-top: 0.5em;      /* adds spacing */
-  font-style: italic;     /* optional styling */
 }
 
 .about-text {
@@ -242,7 +237,7 @@ a:hover {
     
     .profile-image {
         width: 250px;
-        height: 350px;
+        height: 250px;
         margin: 0 auto 2rem;
     }
     
@@ -272,7 +267,7 @@ a:hover {
     
     .profile-image {
         width: 200px;
-        height: 300px;
+        height: 200px;
     }
     
     .book, .research-section {
